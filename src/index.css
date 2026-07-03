@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-lime: #8dc63f;
+  --color-brand-lime-dark: #5a9e1f;
+  --color-brand-dark: #121212;
+  --color-brand-black: #0c0c0c;
+  --color-brand-off-white: #fcfcfc;
+  --color-brand-border: #f0f0f0;
+  --color-brand-gray: #7a7a7a;
+
+  --font-display: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-brand-black);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8dc63f;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Global transitions */
+a {
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Cart drawer overlay */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 998;
+}
+
+/* Page scroll lock when drawer open */
+body.drawer-open {
+  overflow: hidden;
+}
+
+/* Premium Image Zoom Wrapper */
+.image-zoom-container {
+  overflow: hidden;
+  position: relative;
+}
+.image-zoom-img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+}
+.image-zoom-container:hover .image-zoom-img {
+  transform: scale(1.06);
+}
+
+/* High-end inputs */
+input, select, textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-brand-lime);
+  outline: none;
+}
+
+/* Premium Button Styling */
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-premium::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--color-brand-lime);
+  z-index: -1;
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-premium:hover {
+  color: #111 !important;
+  border-color: var(--color-brand-lime) !important;
+}
+.btn-premium:hover::after {
+  height: 100%;
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "BYN Repeat Refine Result Tee",
+    "price": "₦40,000.00",
+    "priceNumeric": 40000,
+    "category": "t-shirts",
+    "slug": "byn-repeat-refine-result-tee",
+    "description": "Performance essentials engineered for movement. Cut clean, built heavy, finished for the street.",
+    "images": {
+      "default": "/images/byb_repeat_refine_result_tee_default.jpg",
+      "hover": "/images/byb_repeat_refine_result_tee_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 2,
+    "name": "BYN Colored Hoodie",
+    "price": "₦45,000.00",
+    "priceNumeric": 45000,
+    "category": "t-shirts",
+    "slug": "byn-colored-hoodie",
+    "description": "Heavy-weight premium hoodie built for sessions and streets alike. A BYN essential.",
+    "images": {
+      "default": "/images/byn_colored_hoodie_default.jpg",
+      "hover": "/images/byn_colored_hoodie_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 3,
+    "name": "Signature Crop Logo",
+    "price": "₦45,000.00",
+    "priceNumeric": 45000,
+    "category": "t-shirts",
+    "slug": "signature-crop-logo",
+    "description": "Clean crop, bold identity. The Signature Logo Tee — made to stand out, made to move.",
+    "images": {
+      "default": "/images/signature_crop_logo_default.jpg",
+      "hover": "/images/signature_crop_logo_hover.jpg"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 4,
+    "name": "BYN Joggers",
+    "price": "₦40,000.00",
+    "priceNumeric": 40000,
+    "category": "gym-wear",
+    "slug": "byn-joggers",
+    "description": "Tapered performance joggers with a minimal aesthetic. Train in comfort, step out in style.",
+    "images": {
+      "default": "/images/byn_joggers_default.jpg",
+      "hover": "/images/byn_joggers_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 5,
+    "name": "Shadow Compression Tee",
+    "price": "₦30,000.00",
+    "priceNumeric": 30000,
+    "category": "gym-wear",
+    "slug": "shadow-compression-tee",
+    "description": "Second-skin compression fit for peak performance. Built with moisture-wicking performance fabric.",
+    "images": {
+      "default": "/images/shadow_compression_tee_default.jpg",
+      "hover": "/images/shadow_compression_tee_default.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 6,
+    "name": "BYN Tank Top",
+    "price": "₦25,000.00",
+    "priceNumeric": 25000,
+    "category": "gym-wear",
+    "slug": "byn-tank-top",
+    "description": "Lightweight, breathable, and ready for any workout. The BYN Tank is a training staple.",
+    "images": {
+      "default": "/images/byn_tank_top_default.jpg",
+      "hover": "/images/byn_tank_top_default.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 7,
+    "name": "BYN Jorts",
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
+    "category": "shorts",
+    "slug": "byn-jorts",
+    "description": "Rugged denim-cut shorts with an athletic silhouette. From the gym to the block.",
+    "images": {
+      "default": "/images/byn_jorts_default.jpg",
+      "hover": "/images/byn_jorts_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 8,
+    "name": "BYN Athletic Shorts",
+    "price": "₦32,000.00",
+    "priceNumeric": 32000,
+    "category": "shorts",
+    "slug": "byn-athletic-shorts",
+    "description": "Ultra-light athletic shorts made for speed. Built with 4-way stretch performance fabric.",
+    "images": {
+      "default": "/images/byn_athletic_shorts_default.jpg",
+      "hover": "/images/byn_athletic_shorts_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  }
+]
