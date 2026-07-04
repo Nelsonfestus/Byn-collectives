@@ -5,7 +5,7 @@ import { ShoppingCart, Check, ArrowLeft, ShieldCheck, Truck, RefreshCw, ChevronD
 import products from '../data/products.json'
 import useCartStore from '../store/cartStore'
 import ProductCard from '../components/product/ProductCard'
-import { formatOrderMessage } from '../lib/whatsapp'
+import { formatOrderMessage, WHATSAPP_NUMBER } from '../lib/whatsapp'
 
 function AccordionTab({ title, children }) {
   const [open, setOpen] = useState(false)
@@ -103,7 +103,7 @@ export default function ProductDetail({ onToast }) {
       priceNumeric: product.priceNumeric
     }]
     const message = formatOrderMessage(singleItemCart)
-    const url = `https://wa.me/2347061342928?text=${encodeURIComponent(message)}`
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank', 'noopener,noreferrer')
   }
 

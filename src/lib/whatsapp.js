@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '2347061342928'
+export const WHATSAPP_NUMBER = '2347079959818'
 
 /**
  * Formats cart items into the BYN Collectives order message string.
