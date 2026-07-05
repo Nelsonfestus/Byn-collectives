@@ -1,7 +1,7 @@
 export const WHATSAPP_NUMBER = '2347079959818'
 
 /**
- * Formats cart items into the BYN Collectives order message string.
+ * Formats cart items into the BYH Collectives order message string.
  * @param {Array} cart - Array of cart items
  * @returns {string} Formatted order message
  */
@@ -13,7 +13,7 @@ export function formatOrderMessage(cart) {
   const total = cart.reduce((sum, i) => sum + i.priceNumeric * i.qty, 0)
   const formattedTotal = `₦${total.toLocaleString('en-NG')}`
 
-  return `Hello BYN Collectives! 👋\n\nI'd like to order the following:\n\n${lines}\n\nTotal: ${formattedTotal}\n\nPlease confirm availability and payment details. Thank you!`
+  return `Hello BYH Collectives! 👋\n\nI'd like to order the following:\n\n${lines}\n\nTotal: ${formattedTotal}\n\nPlease confirm availability and payment details. Thank you!`
 }
 
 /**

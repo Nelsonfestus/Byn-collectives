@@ -109,7 +109,7 @@ export default function ProductDetail({ onToast }) {
 
   return (
     <div style={{ background: '#0c0c0c', minHeight: 'calc(100vh - 80px)', padding: '60px 100px', color: '#fff' }} className="detail-page">
-      <title>{`${product.name} — BYN Collectives`}</title>
+      <title>{`${product.name} — BYH Collectives`}</title>
       <meta name="description" content={product.description} />
 
       <Link
@@ -202,7 +202,7 @@ export default function ProductDetail({ onToast }) {
         {/* Product Details */}
         <div>
           <span style={{ fontSize: 10, fontWeight: 700, color: '#8dc63f', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'block', marginBottom: 14 }}>
-            BYN COLLECTION / {product.category.replace('-', ' ')}
+            BYH COLLECTION / {product.category.replace('-', ' ')}
           </span>
           <h1
             style={{

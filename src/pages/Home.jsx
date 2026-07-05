@@ -121,7 +121,7 @@ function Hero({ onToast }) {
         >
           <img
             src="/images/hero_banner.jpg"
-            alt="BYN Collectives Lookbook"
+            alt="BYH Collectives Lookbook"
             style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', filter: 'brightness(0.9)' }}
           />
           {/* Decorative tag overlay */}
@@ -353,8 +353,8 @@ export default function Home({ onToast }) {
 
   return (
     <div style={{ background: '#0c0c0c' }}>
-      <title>BYN Collectives — Repeat. Refine. Result.</title>
-      <meta name="description" content="BYN Collectives — premium athletic streetwear engineered for movement. Shop T-Shirts, Gym Wear, and Shorts." />
+      <title>BYH Collectives — Repeat. Refine. Result.</title>
+      <meta name="description" content="BYH Collectives — premium athletic streetwear engineered for movement. Shop T-Shirts, Gym Wear, and Shorts." />
 
       <Hero onToast={onToast} />
 

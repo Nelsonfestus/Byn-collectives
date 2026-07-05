@@ -56,7 +56,7 @@ export default function Header() {
             <div style={{ position: 'relative' }}>
               <img
                 src="/images/logo.jpg"
-                alt="BYN Collectives Logo"
+                alt="BYH Collectives Logo"
                 style={{
                   height: 40,
                   width: 40,
@@ -69,7 +69,7 @@ export default function Header() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
               <span style={{ fontSize: 16, fontWeight: 900, color: '#fff', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'Outfit, sans-serif' }}>
-                BYN
+                BYH
               </span>
               <span style={{ fontSize: 9, fontWeight: 700, color: '#8dc63f', letterSpacing: '0.24em', textTransform: 'uppercase', fontFamily: 'Outfit, sans-serif' }}>
                 Collectives

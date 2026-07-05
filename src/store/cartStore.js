@@ -83,7 +83,7 @@ const useCartStore = create(
       },
     }),
     {
-      name: 'byn-cart', // localStorage key
+      name: 'byh-cart', // localStorage key
       partialize: (state) => ({ cart: state.cart }), // only persist cart array
     }
   )

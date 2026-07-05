@@ -22,12 +22,12 @@ export default function Shop({ onToast }) {
 
   return (
     <div style={{ background: '#0c0c0c', minHeight: 'calc(100vh - 80px)', padding: '80px 100px' }} className="shop-page">
-      <title>Shop — BYN Collectives</title>
-      <meta name="description" content="Browse the full catalog of BYN Collectives. High-end athletic and street fitness apparel." />
+      <title>Shop — BYH Collectives</title>
+      <meta name="description" content="Browse the full catalog of BYH Collectives. High-end athletic and street fitness apparel." />
 
       <div style={{ marginBottom: 48 }}>
         <p style={{ fontSize: 10, fontWeight: 700, color: '#8dc63f', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 12, fontFamily: 'Outfit, sans-serif' }}>
-          BYN CATALOG
+          BYH CATALOG
         </p>
         <h1
           style={{

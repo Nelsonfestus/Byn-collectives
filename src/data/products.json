@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "BYN Repeat Refine Result Tee",
+    "name": "BYH Repeat Refine Result Tee",
     "price": "₦40,000.00",
     "priceNumeric": 40000,
     "category": "t-shirts",
-    "slug": "byn-repeat-refine-result-tee",
+    "slug": "byh-repeat-refine-result-tee",
     "description": "Performance essentials engineered for movement. Cut clean, built heavy, finished for the street.",
     "images": {
       "default": "/images/byb_repeat_refine_result_tee_default.jpg",
@@ -15,15 +15,15 @@
   },
   {
     "id": 2,
-    "name": "BYN Colored Hoodie",
-    "price": "₦45,000.00",
-    "priceNumeric": 45000,
+    "name": "BYH Hoodie",
+    "price": "₦40,000.00",
+    "priceNumeric": 40000,
     "category": "t-shirts",
-    "slug": "byn-colored-hoodie",
-    "description": "Heavy-weight premium hoodie built for sessions and streets alike. A BYN essential.",
+    "slug": "byh-hoodie",
+    "description": "Heavy-weight premium hoodie built for sessions and streets alike. A BYH essential.",
     "images": {
-      "default": "/images/byn_colored_hoodie_default.jpg",
-      "hover": "/images/byn_colored_hoodie_hover.jpg"
+      "default": "/images/byh_hoodie_default.jpeg",
+      "hover": "/images/byh_hoodie_default.jpeg"
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
@@ -43,15 +43,15 @@
   },
   {
     "id": 4,
-    "name": "BYN Joggers",
-    "price": "₦40,000.00",
-    "priceNumeric": 40000,
+    "name": "BYH Joggers",
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
     "category": "gym-wear",
-    "slug": "byn-joggers",
+    "slug": "byh-joggers",
     "description": "Tapered performance joggers with a minimal aesthetic. Train in comfort, step out in style.",
     "images": {
-      "default": "/images/byn_joggers_default.jpg",
-      "hover": "/images/byn_joggers_hover.jpg"
+      "default": "/images/byh_joggers_default.jpeg",
+      "hover": "/images/byh_joggers_default.jpeg"
     },
     "sizes": ["S", "M", "L", "XL"]
   },
@@ -71,12 +71,12 @@
   },
   {
     "id": 6,
-    "name": "BYN Tank Top",
+    "name": "BYH Tank Top",
     "price": "₦25,000.00",
     "priceNumeric": 25000,
     "category": "gym-wear",
-    "slug": "byn-tank-top",
-    "description": "Lightweight, breathable, and ready for any workout. The BYN Tank is a training staple.",
+    "slug": "byh-tank-top",
+    "description": "Lightweight, breathable, and ready for any workout. The BYH Tank is a training staple.",
     "images": {
       "default": "/images/byn_tank_top_default.jpg",
       "hover": "/images/byn_tank_top_default.jpg"
@@ -85,29 +85,43 @@
   },
   {
     "id": 7,
-    "name": "BYN Jorts",
+    "name": "BYH Jorts",
     "price": "₦35,000.00",
     "priceNumeric": 35000,
     "category": "shorts",
-    "slug": "byn-jorts",
+    "slug": "byh-jorts",
     "description": "Rugged denim-cut shorts with an athletic silhouette. From the gym to the block.",
     "images": {
-      "default": "/images/byn_jorts_default.jpg",
-      "hover": "/images/byn_jorts_hover.jpg"
+      "default": "/images/byh_jorts_default.jpeg",
+      "hover": "/images/byh_jorts_default.jpeg"
     },
     "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 8,
-    "name": "BYN Athletic Shorts",
+    "name": "BYH Athletic Shorts",
     "price": "₦32,000.00",
     "priceNumeric": 32000,
     "category": "shorts",
-    "slug": "byn-athletic-shorts",
+    "slug": "byh-athletic-shorts",
     "description": "Ultra-light athletic shorts made for speed. Built with 4-way stretch performance fabric.",
     "images": {
       "default": "/images/byn_athletic_shorts_default.jpg",
       "hover": "/images/byn_athletic_shorts_hover.jpg"
+    },
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 9,
+    "name": "BYH Long Tee",
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
+    "category": "t-shirts",
+    "slug": "byh-long-tee",
+    "description": "Premium long sleeve tee engineered for comfort and daily movement. Cut clean and built heavy.",
+    "images": {
+      "default": "/images/byh_long_tee_default.jpeg",
+      "hover": "/images/byh_long_tee_default.jpeg"
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
   }

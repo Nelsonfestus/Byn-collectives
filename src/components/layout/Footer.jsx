@@ -114,7 +114,7 @@ export default function Footer() {
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 14, textDecoration: 'none', marginBottom: 24 }}>
               <img
                 src="/images/logo.jpg"
-                alt="BYN Collectives"
+                alt="BYH Collectives"
                 style={{
                   height: 38,
                   width: 38,
@@ -124,7 +124,7 @@ export default function Footer() {
                 }}
               />
               <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.05 }}>
-                <span style={{ fontSize: 15, fontWeight: 900, color: '#fff', letterSpacing: '0.12em', fontFamily: 'Outfit, sans-serif' }}>BYN</span>
+                <span style={{ fontSize: 15, fontWeight: 900, color: '#fff', letterSpacing: '0.12em', fontFamily: 'Outfit, sans-serif' }}>BYH</span>
                 <span style={{ fontSize: 9, fontWeight: 700, color: '#8dc63f', letterSpacing: '0.24em', textTransform: 'uppercase', fontFamily: 'Outfit, sans-serif' }}>Collectives</span>
               </div>
             </Link>
@@ -221,7 +221,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.04em' }}>
-            © {new Date().getFullYear()} BYN Collectives. Engineered in Nigeria. All rights reserved.
+            © {new Date().getFullYear()} BYH Collectives. Engineered in Nigeria. All rights reserved.
           </p>
         </div>
       </footer>
