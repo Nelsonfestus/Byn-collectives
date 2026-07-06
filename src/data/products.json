@@ -69,20 +69,7 @@
     },
     "sizes": ["S", "M", "L", "XL"]
   },
-  {
-    "id": 6,
-    "name": "BYH Tank Top",
-    "price": "₦25,000.00",
-    "priceNumeric": 25000,
-    "category": "gym-wear",
-    "slug": "byh-tank-top",
-    "description": "Lightweight, breathable, and ready for any workout. The BYH Tank is a training staple.",
-    "images": {
-      "default": "/images/byn_tank_top_default.png",
-      "hover": "/images/byn_tank_top_default.png"
-    },
-    "sizes": ["S", "M", "L", "XL"]
-  },
+
   {
     "id": 7,
     "name": "BYH Jorts",
