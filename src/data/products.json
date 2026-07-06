@@ -14,20 +14,7 @@
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
-  {
-    "id": 3,
-    "name": "BYH Signature Crop Logo",
-    "price": "₦45,000.00",
-    "priceNumeric": 45000,
-    "category": "t-shirts",
-    "slug": "byh-signature-crop-logo",
-    "description": "Clean crop, bold identity. The BYH Signature Logo Tee — made to stand out, made to move.",
-    "images": {
-      "default": "/images/signature_crop_logo_default.jpg",
-      "hover": "/images/signature_crop_logo_hover.jpg"
-    },
-    "sizes": ["XS", "S", "M", "L", "XL"]
-  },
+
   {
     "id": 4,
     "name": "BYH Joggers",
@@ -95,7 +82,7 @@
     "slug": "byh-rrr-tee-white",
     "description": "Repeat. Refine. Result. The iconic BYH statement tee in crisp white — anime-graphic back print, street-ready silhouette.",
     "images": {
-      "default": "/images/byn_rrr_tee_white.jpeg",
+      "default": "/images/byn_rrr_tee_white_v2.jpeg",
       "hover": "/images/byn_rrr_tee_white_alt.jpeg"
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
@@ -114,20 +101,7 @@
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
-  {
-    "id": 12,
-    "name": "BYH RRR Tee — Sage",
-    "price": "₦40,000.00",
-    "priceNumeric": 40000,
-    "category": "t-shirts",
-    "slug": "byh-rrr-tee-sage",
-    "description": "Repeat. Refine. Result. The BYH statement graphic tee in earthy sage — muted tones, loud energy.",
-    "images": {
-      "default": "/images/byn_rrr_tee_sage.jpeg",
-      "hover": "/images/byn_rrr_tee_blue.jpeg"
-    },
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
+
   {
     "id": 13,
     "name": "BYH RRR Tee — Coral",
