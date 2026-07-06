@@ -1,18 +1,5 @@
 [
-  {
-    "id": 1,
-    "name": "BYH Repeat Refine Result Tee",
-    "price": "₦40,000.00",
-    "priceNumeric": 40000,
-    "category": "t-shirts",
-    "slug": "byh-repeat-refine-result-tee",
-    "description": "Performance essentials engineered for movement. Cut clean, built heavy, finished for the street.",
-    "images": {
-      "default": "/images/byb_repeat_refine_result_tee_default.jpg",
-      "hover": "/images/byb_repeat_refine_result_tee_hover.jpg"
-    },
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
+
   {
     "id": 2,
     "name": "BYH Hoodie",
@@ -55,20 +42,7 @@
     },
     "sizes": ["S", "M", "L", "XL"]
   },
-  {
-    "id": 5,
-    "name": "BYH Shadow Compression Tee",
-    "price": "₦30,000.00",
-    "priceNumeric": 30000,
-    "category": "gym-wear",
-    "slug": "byh-shadow-compression-tee",
-    "description": "Second-skin compression fit for peak performance. Built with moisture-wicking performance fabric.",
-    "images": {
-      "default": "/images/shadow_compression_tee_default.jpg",
-      "hover": "/images/shadow_compression_tee_default.jpg"
-    },
-    "sizes": ["S", "M", "L", "XL"]
-  },
+
 
   {
     "id": 7,
@@ -210,20 +184,7 @@
     },
     "sizes": ["S", "M", "L", "XL"]
   },
-  {
-    "id": 17,
-    "name": "BYH Compression Long Sleeve — Black",
-    "price": "₦30,000.00",
-    "priceNumeric": 30000,
-    "category": "gym-wear",
-    "slug": "byh-compression-longsleeve-black",
-    "description": "Full-coverage long sleeve compression in matte black. Built for training, recovery, and everything in between.",
-    "images": {
-      "default": "/images/byn_compression_longsleeve_black.jpg",
-      "hover": "/images/byn_compression_tee_white.jpeg"
-    },
-    "sizes": ["S", "M", "L", "XL"]
-  },
+
   {
     "id": 18,
     "name": "BYH Muscle Tank — Grey",
