@@ -62,11 +62,22 @@ export default function ProductDetail({ onToast }) {
   const [selectedSize, setSelectedSize] = useState('')
   const [selectedImage, setSelectedImage] = useState('')
   const [added, setAdded] = useState(false)
+  const [activeColorIdx, setActiveColorIdx] = useState(0)
+
+  const hasColors = product?.colors && product.colors.length > 0
+  const activeColor = hasColors ? product.colors[activeColorIdx] : null
+
+  const currentDefault = activeColor ? activeColor.default : product?.images.default
+  const currentHover = activeColor ? activeColor.hover : product?.images.hover
 
   useEffect(() => {
     if (product) {
       setSelectedSize(product.sizes?.[1] || product.sizes?.[0] || 'M')
-      setSelectedImage(product.images.default)
+      const defaultImg = product.colors && product.colors.length > 0
+        ? product.colors[0].default
+        : product.images.default
+      setSelectedImage(defaultImg)
+      setActiveColorIdx(0)
     }
     window.scrollTo({ top: 0, behavior: 'instant' })
   }, [product])
@@ -87,16 +98,25 @@ export default function ProductDetail({ onToast }) {
     .slice(0, 4)
 
   function handleAddToCart() {
-    addToCart(product, selectedSize)
+    const itemToAdd = activeColor
+      ? {
+          ...product,
+          id: `${product.id}-${activeColor.name.toLowerCase()}`,
+          name: `${product.name} — ${activeColor.name}`,
+          images: { default: activeColor.default }
+        }
+      : product
+    addToCart(itemToAdd, selectedSize)
     setAdded(true)
-    onToast(`🛒 Added ${product.name} (${selectedSize}) to cart`)
+    onToast(`🛒 Added ${itemToAdd.name} (${selectedSize}) to cart`)
     setTimeout(() => setAdded(false), 2000)
   }
 
   // Quick single product checkout directly via WhatsApp
   function handleWhatsAppQuickCheckout() {
+    const itemName = activeColor ? `${product.name} — ${activeColor.name}` : product.name
     const singleItemCart = [{
-      name: product.name,
+      name: itemName,
       size: selectedSize,
       qty: 1,
       price: product.price,
@@ -167,33 +187,33 @@ export default function ProductDetail({ onToast }) {
           </div>
 
           {/* Thumbnails */}
-          {product.images.hover && (
+          {currentHover && (
             <div style={{ display: 'flex', gap: 14 }}>
               <button
-                onClick={() => setSelectedImage(product.images.default)}
+                onClick={() => setSelectedImage(currentDefault)}
                 style={{
                   width: 72,
                   height: 72,
                   padding: 0,
-                  border: selectedImage === product.images.default ? '2px solid #8dc63f' : '1px solid rgba(255,255,255,0.1)',
+                  border: selectedImage === currentDefault ? '2px solid #8dc63f' : '1px solid rgba(255,255,255,0.1)',
                   cursor: 'pointer',
                   background: '#121212',
                 }}
               >
-                <img src={product.images.default} alt="default view" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={currentDefault} alt="default view" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </button>
               <button
-                onClick={() => setSelectedImage(product.images.hover)}
+                onClick={() => setSelectedImage(currentHover)}
                 style={{
                   width: 72,
                   height: 72,
                   padding: 0,
-                  border: selectedImage === product.images.hover ? '2px solid #8dc63f' : '1px solid rgba(255,255,255,0.1)',
+                  border: selectedImage === currentHover ? '2px solid #8dc63f' : '1px solid rgba(255,255,255,0.1)',
                   cursor: 'pointer',
                   background: '#121212',
                 }}
               >
-                <img src={product.images.hover} alt="alternate view" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={currentHover} alt="alternate view" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </button>
             </div>
           )}
@@ -220,6 +240,42 @@ export default function ProductDetail({ onToast }) {
           <p style={{ fontSize: 22, fontWeight: 700, color: '#fff', marginBottom: 32 }}>{product.price}</p>
 
           <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 32 }} />
+
+          {/* Color Selector */}
+          {hasColors && (
+            <div style={{ marginBottom: 28 }}>
+              <p style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255, 255, 255, 0.4)', marginBottom: 14 }}>
+                Select Color: <span style={{ color: '#8dc63f' }}>{product.colors[activeColorIdx].name}</span>
+              </p>
+              <div style={{ display: 'flex', gap: 12 }}>
+                {product.colors.map((color, idx) => {
+                  const isSelected = activeColorIdx === idx
+                  return (
+                    <button
+                      key={color.name}
+                      onClick={() => {
+                        setActiveColorIdx(idx)
+                        setSelectedImage(color.default)
+                      }}
+                      title={color.name}
+                      style={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: '50%',
+                        background: color.swatch,
+                        border: isSelected ? '2.5px solid #8dc63f' : '2.5px solid rgba(255, 255, 255, 0.15)',
+                        cursor: 'pointer',
+                        transform: isSelected ? 'scale(1.15)' : 'scale(1)',
+                        transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        padding: 0,
+                        outline: 'none',
+                      }}
+                    />
+                  )
+                })}
+              </div>
+            </div>
+          )}
 
           <p style={{ fontSize: 14.5, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 36, fontWeight: 300 }}>
             {product.description}
