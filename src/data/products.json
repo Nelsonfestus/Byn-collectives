@@ -75,45 +75,21 @@
   },
   {
     "id": 10,
-    "name": "BYH RRR Tee — White",
+    "name": "BYH RRR Tee",
     "price": "₦40,000.00",
     "priceNumeric": 40000,
     "category": "t-shirts",
-    "slug": "byh-rrr-tee-white",
-    "description": "Repeat. Refine. Result. The iconic BYH statement tee in crisp white — anime-graphic back print, street-ready silhouette.",
-    "images": {
-      "default": "/images/byn_rrr_tee_white_v2.jpeg",
-      "hover": "/images/byn_rrr_tee_white_alt.jpeg"
-    },
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-  {
-    "id": 11,
-    "name": "BYH RRR Tee — Navy",
-    "price": "₦40,000.00",
-    "priceNumeric": 40000,
-    "category": "t-shirts",
-    "slug": "byh-rrr-tee-navy",
-    "description": "Repeat. Refine. Result. The BYH signature graphic tee in bold navy — heavy weight, oversized fit.",
-    "images": {
-      "default": "/images/byn_rrr_tee_navy.jpeg",
-      "hover": "/images/byn_rrr_tee_black.jpeg"
-    },
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-
-  {
-    "id": 13,
-    "name": "BYH RRR Tee — Coral",
-    "price": "₦40,000.00",
-    "priceNumeric": 40000,
-    "category": "t-shirts",
-    "slug": "byh-rrr-tee-coral",
-    "description": "Repeat. Refine. Result. The BYH graphic tee in vibrant coral — oversized cut, premium cotton weight.",
+    "slug": "byh-rrr-tee",
+    "description": "Repeat. Refine. Result. The BYH signature graphic tee — anime-inspired back print, oversized cut, premium cotton weight. Available in 3 colorways.",
     "images": {
       "default": "/images/byn_rrr_tee_coral_v2.jpeg",
-      "hover": "/images/byn_rrr_tee_white.jpeg"
+      "hover": "/images/byn_rrr_tee_navy.jpeg"
     },
+    "colors": [
+      { "name": "Coral", "swatch": "#e8593a", "default": "/images/byn_rrr_tee_coral_v2.jpeg", "hover": "/images/byn_rrr_tee_white_v2.jpeg" },
+      { "name": "Navy", "swatch": "#1a2a4a", "default": "/images/byn_rrr_tee_navy.jpeg", "hover": "/images/byn_rrr_tee_coral_v2.jpeg" },
+      { "name": "White", "swatch": "#f5f5f5", "default": "/images/byn_rrr_tee_white_v2.jpeg", "hover": "/images/byn_rrr_tee_coral_v2.jpeg" }
+    ],
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {

@@ -9,14 +9,28 @@ export default function ProductCard({ product, onAddToCart }) {
   const [added, setAdded] = useState(false)
   const [hovered, setHovered] = useState(false)
 
+  // Color variant state — default to first color if product has colors
+  const hasColors = product.colors && product.colors.length > 0
+  const [activeColorIdx, setActiveColorIdx] = useState(0)
+
+  // Resolve current images based on active color or product default
+  const activeColor = hasColors ? product.colors[activeColorIdx] : null
+  const currentDefault = activeColor ? activeColor.default : product.images.default
+  const currentHover   = activeColor ? activeColor.hover   : product.images.hover
+
   function handleQuickAdd(e) {
     e.preventDefault()
     e.stopPropagation()
-    // Default size is the second size (e.g. M)
     addToCart(product, product.sizes?.[1] || 'M')
     setAdded(true)
     onAddToCart?.(`🛒 Added ${product.name} to cart`)
     setTimeout(() => setAdded(false), 2000)
+  }
+
+  function handleSwatchClick(e, idx) {
+    e.preventDefault()
+    e.stopPropagation()
+    setActiveColorIdx(idx)
   }
 
   return (
@@ -51,19 +65,21 @@ export default function ProductCard({ product, onAddToCart }) {
           >
             {/* Main default image */}
             <motion.img
-              src={product.images.default}
+              key={currentDefault}
+              src={currentDefault}
               alt={product.name}
               loading="lazy"
               className="image-zoom-img"
-              animate={{ opacity: hovered && product.images.hover ? 0 : 1 }}
+              animate={{ opacity: hovered && currentHover ? 0 : 1 }}
               transition={{ duration: 0.4 }}
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
 
             {/* Alternative hover image */}
-            {product.images.hover && (
+            {currentHover && (
               <motion.img
-                src={product.images.hover}
+                key={currentHover}
+                src={currentHover}
                 alt={`${product.name} alternate view`}
                 loading="lazy"
                 className="image-zoom-img"
@@ -146,7 +162,7 @@ export default function ProductCard({ product, onAddToCart }) {
             </AnimatePresence>
           </div>
 
-          {/* Info Area (Title & price + mobile quick action triggers) */}
+          {/* Info Area */}
           <div style={{ padding: '14px 0 0', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
             <div style={{ minWidth: 0, flex: 1 }}>
               <p
@@ -165,17 +181,23 @@ export default function ProductCard({ product, onAddToCart }) {
                 }}
               >
                 {product.name}
+                {hasColors && (
+                  <span style={{ color: 'rgba(255,255,255,0.35)', fontWeight: 400, fontSize: 11, marginLeft: 6 }}>
+                    — {product.colors[activeColorIdx].name}
+                  </span>
+                )}
               </p>
+
               <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px 10px' }}>
                 <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>
                   {product.price}
                 </span>
-                <span 
-                  className="mobile-sizes-tag" 
-                  style={{ 
-                    fontSize: 10, 
-                    color: '#8dc63f', 
-                    letterSpacing: '0.05em', 
+                <span
+                  className="mobile-sizes-tag"
+                  style={{
+                    fontSize: 10,
+                    color: '#8dc63f',
+                    letterSpacing: '0.05em',
                     fontWeight: 600,
                     display: 'none'
                   }}
@@ -183,6 +205,34 @@ export default function ProductCard({ product, onAddToCart }) {
                   [{product.sizes.join('/')}]
                 </span>
               </div>
+
+              {/* Color Swatches */}
+              {hasColors && (
+                <div style={{ display: 'flex', gap: 6, marginTop: 10 }}>
+                  {product.colors.map((color, idx) => (
+                    <button
+                      key={color.name}
+                      onClick={(e) => handleSwatchClick(e, idx)}
+                      title={color.name}
+                      style={{
+                        width: 16,
+                        height: 16,
+                        borderRadius: '50%',
+                        background: color.swatch,
+                        border: activeColorIdx === idx
+                          ? '2px solid #8dc63f'
+                          : '2px solid rgba(255,255,255,0.2)',
+                        cursor: 'pointer',
+                        padding: 0,
+                        transition: 'border-color 0.2s, transform 0.2s',
+                        transform: activeColorIdx === idx ? 'scale(1.2)' : 'scale(1)',
+                        outline: 'none',
+                      }}
+                      aria-label={`Select ${color.name}`}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Mobile Touch Quick Add Button */}
