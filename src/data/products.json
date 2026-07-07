@@ -1,5 +1,19 @@
 [
   {
+    "id": 9,
+    "name": "BYH Long Tee",
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
+    "category": "t-shirts",
+    "slug": "byh-long-tee",
+    "description": "Premium long sleeve tee engineered for comfort and daily movement. Cut clean and built heavy.",
+    "images": {
+      "default": "/images/byn_compression_longsleeve_black.jpg",
+      "hover": "/images/byh_long_tee_default.jpeg"
+    },
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
     "id": 2,
     "name": "BYH BE YOUR HERO Hoodie",
     "price": "₦40,000.00",
@@ -63,20 +77,6 @@
       { "name": "Black", "swatch": "#000000", "default": "/images/byn_athletic_shorts_black.jpeg", "hover": "/images/byn_athletic_shorts_grey.jpeg" },
       { "name": "Lime", "swatch": "#d4ff3b", "default": "/images/byn_athletic_shorts_lime.jpeg", "hover": "/images/byn_athletic_shorts_red.jpeg" }
     ],
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-  {
-    "id": 9,
-    "name": "BYH Long Tee",
-    "price": "₦35,000.00",
-    "priceNumeric": 35000,
-    "category": "t-shirts",
-    "slug": "byh-long-tee",
-    "description": "Premium long sleeve tee engineered for comfort and daily movement. Cut clean and built heavy.",
-    "images": {
-      "default": "/images/byn_compression_longsleeve_black.jpg",
-      "hover": "/images/byh_long_tee_default.jpeg"
-    },
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
