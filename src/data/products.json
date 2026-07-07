@@ -74,7 +74,7 @@
     "slug": "byh-long-tee",
     "description": "Premium long sleeve tee engineered for comfort and daily movement. Cut clean and built heavy.",
     "images": {
-      "default": "/images/byh_long_tee_default.jpeg",
+      "default": "/images/byn_compression_longsleeve_black.jpg",
       "hover": "/images/byh_long_tee_default.jpeg"
     },
     "sizes": ["S", "M", "L", "XL", "XXL"]
