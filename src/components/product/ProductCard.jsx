@@ -21,9 +21,17 @@ export default function ProductCard({ product, onAddToCart }) {
   function handleQuickAdd(e) {
     e.preventDefault()
     e.stopPropagation()
-    addToCart(product, product.sizes?.[1] || 'M')
+    const itemToAdd = activeColor
+      ? {
+          ...product,
+          id: `${product.id}-${activeColor.name.toLowerCase()}`,
+          name: `${product.name} — ${activeColor.name}`,
+          images: { default: activeColor.default }
+        }
+      : product
+    addToCart(itemToAdd, product.sizes?.[1] || 'M')
     setAdded(true)
-    onAddToCart?.(`🛒 Added ${product.name} to cart`)
+    onAddToCart?.(`🛒 Added ${itemToAdd.name} to cart`)
     setTimeout(() => setAdded(false), 2000)
   }
 
