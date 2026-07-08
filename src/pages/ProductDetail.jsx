@@ -94,7 +94,12 @@ export default function ProductDetail({ onToast }) {
   }
 
   const relatedProducts = products
-    .filter((p) => p.category === product.category && p.id !== product.id)
+    .filter((p) => {
+      if (p.id === product.id) return false
+      const pCats = Array.isArray(p.category) ? p.category : [p.category]
+      const prodCats = Array.isArray(product.category) ? product.category : [product.category]
+      return pCats.some((c) => prodCats.includes(c))
+    })
     .slice(0, 4)
 
   function handleAddToCart() {
@@ -222,7 +227,7 @@ export default function ProductDetail({ onToast }) {
         {/* Product Details */}
         <div>
           <span style={{ fontSize: 10, fontWeight: 700, color: '#8dc63f', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'block', marginBottom: 14 }}>
-            BYH COLLECTION / {product.category.replace('-', ' ')}
+            BYH COLLECTION / {Array.isArray(product.category) ? product.category.map((c) => c.replace('-', ' ')).join(' & ') : product.category.replace('-', ' ')}
           </span>
           <h1
             style={{
@@ -245,7 +250,7 @@ export default function ProductDetail({ onToast }) {
           {hasColors && (
             <div style={{ marginBottom: 28 }}>
               <p style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255, 255, 255, 0.4)', marginBottom: 14 }}>
-                Select Color: <span style={{ color: '#8dc63f' }}>{product.colors[activeColorIdx].name}</span>
+                Select {product.colors?.some(c => c.name === 'Joggers' || c.name === 'Jorts') ? 'Style' : 'Color'}: <span style={{ color: '#8dc63f' }}>{product.colors[activeColorIdx].name}</span>
               </p>
               <div style={{ display: 'flex', gap: 12 }}>
                 {product.colors.map((color, idx) => {

@@ -10,7 +10,11 @@ export default function Shop({ onToast }) {
   // Filter products based on search param
   const filteredProducts = activeCategory === 'all'
     ? products
-    : products.filter((p) => p.category === activeCategory)
+    : products.filter((p) =>
+        Array.isArray(p.category)
+          ? p.category.includes(activeCategory)
+          : p.category === activeCategory
+      )
 
   function handleFilterChange(category) {
     if (category === 'all') {

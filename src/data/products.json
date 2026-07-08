@@ -34,30 +34,20 @@
   },
   {
     "id": 4,
-    "name": "BYH Joggers",
+    "name": "BYH Joggers & Jorts",
     "price": "₦35,000.00",
     "priceNumeric": 35000,
-    "category": "gym-wear",
-    "slug": "byh-joggers",
-    "description": "Tapered performance joggers with a minimal aesthetic. Train in comfort, step out in style.",
+    "category": ["gym-wear", "shorts"],
+    "slug": "byh-joggers-jorts",
+    "description": "Tapered performance joggers and rugged denim-cut athletic jorts. Built for comfort, standard athletic movement, and street style.",
     "images": {
       "default": "/images/byh_joggers_default.jpeg",
-      "hover": "/images/byh_joggers_default.jpeg"
-    },
-    "sizes": ["S", "M", "L", "XL"]
-  },
-  {
-    "id": 7,
-    "name": "BYH Jorts",
-    "price": "₦35,000.00",
-    "priceNumeric": 35000,
-    "category": "shorts",
-    "slug": "byh-jorts",
-    "description": "Rugged denim-cut shorts with an athletic silhouette. From the gym to the block.",
-    "images": {
-      "default": "/images/byh_jorts_default.jpeg",
       "hover": "/images/byh_jorts_default.jpeg"
     },
+    "colors": [
+      { "name": "Joggers", "swatch": "#1a1a1a", "default": "/images/byh_joggers_default.jpeg", "hover": "/images/byh_jorts_default.jpeg" },
+      { "name": "Jorts", "swatch": "#8b9cb4", "default": "/images/byh_jorts_default.jpeg", "hover": "/images/byh_joggers_default.jpeg" }
+    ],
     "sizes": ["S", "M", "L", "XL"]
   },
   {

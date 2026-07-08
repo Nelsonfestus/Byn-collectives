@@ -346,9 +346,9 @@ function FeaturedCarousel({ onToast }) {
 // ─── Home Component ──────────────────────────────────────────────────────────
 export default function Home({ onToast }) {
   const categoryImages = {
-    't-shirts': products.find((p) => p.category === 't-shirts')?.images.default,
-    'gym-wear': products.find((p) => p.category === 'gym-wear')?.images.default,
-    'shorts': products.find((p) => p.category === 'shorts')?.images.default,
+    't-shirts': products.find((p) => Array.isArray(p.category) ? p.category.includes('t-shirts') : p.category === 't-shirts')?.images.default,
+    'gym-wear': products.find((p) => Array.isArray(p.category) ? p.category.includes('gym-wear') : p.category === 'gym-wear')?.images.default,
+    'shorts': products.find((p) => Array.isArray(p.category) ? p.category.includes('shorts') : p.category === 'shorts')?.images.default,
   }
 
   return (
