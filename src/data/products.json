@@ -137,7 +137,8 @@
     "colors": [
       { "name": "Black", "swatch": "#000000", "default": "/images/byn_wide_leg_joggers_black.jpeg", "hover": "/images/byn_wide_leg_joggers_white.jpeg" },
       { "name": "Pink", "swatch": "#ec9bb7", "default": "/images/byn_wide_leg_joggers_pink.jpeg", "hover": "/images/byn_wide_leg_joggers_coral.jpeg" },
-      { "name": "Navy", "swatch": "#1a2a4a", "default": "/images/byn_wide_leg_joggers_navy.jpeg", "hover": "/images/byn_wide_leg_joggers_black.jpeg" }
+      { "name": "Navy", "swatch": "#1a2a4a", "default": "/images/byn_wide_leg_joggers_navy.jpeg", "hover": "/images/byn_wide_leg_joggers_black.jpeg" },
+      { "name": "White", "swatch": "#ffffff", "default": "/images/byn_wide_leg_joggers_white.jpeg", "hover": "/images/byn_wide_leg_joggers_black.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL"]
   },
@@ -155,7 +156,8 @@
     },
     "colors": [
       { "name": "Black", "swatch": "#000000", "default": "/images/byn_wide_jorts_black.jpeg", "hover": "/images/byn_wide_jorts_white.jpeg" },
-      { "name": "Blue", "swatch": "#4f759e", "default": "/images/byn_wide_jorts_blue.jpeg", "hover": "/images/byn_wide_jorts_pink.jpeg" }
+      { "name": "Blue", "swatch": "#4f759e", "default": "/images/byn_wide_jorts_blue.jpeg", "hover": "/images/byn_wide_jorts_pink.jpeg" },
+      { "name": "White", "swatch": "#ffffff", "default": "/images/byn_wide_jorts_white.jpeg", "hover": "/images/byn_wide_jorts_black.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL"]
   }
