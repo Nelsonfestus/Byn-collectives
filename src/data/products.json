@@ -22,39 +22,49 @@
     "slug": "byh-hoodie",
     "description": "BE YOUR HERO. The BYH premium hoodie — heavy fleece, bold back print, and built to last. Engineered for comfort and street style.",
     "images": {
-      "default": "/images/byn_hoodie_black.jpeg",
+      "default": "/images/byn_hoodie_pink.jpg",
       "hover": "/images/byn_hoodie_blue.jpeg"
     },
     "colors": [
-      { "name": "Black", "swatch": "#000000", "default": "/images/byn_hoodie_black.jpeg", "hover": "/images/byn_hoodie_blue.jpeg" },
-      { "name": "Pink", "swatch": "#ec9bb7", "default": "/images/byn_hoodie_pink.jpg", "hover": "/images/byn_hoodie_black.jpeg" },
-      { "name": "Grey", "swatch": "#8a8a8a", "default": "/images/byh_hoodie_default.jpeg", "hover": "/images/byh_hoodie_default.jpeg" }
+      { "name": "Pink", "swatch": "#ec9bb7", "default": "/images/byn_hoodie_pink.jpg", "hover": "/images/byn_hoodie_blue.jpeg" },
+      { "name": "Blue", "swatch": "#2b5c8f", "default": "/images/byn_hoodie_blue.jpeg", "hover": "/images/byn_hoodie_pink.jpg" },
+      { "name": "Black", "swatch": "#000000", "default": "/images/byn_hoodie_black.jpeg", "hover": "/images/byn_hoodie_blue.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": 4,
-    "name": "BYH Joggers & Jorts",
-    "price": "₦35,000.00",
-    "priceNumeric": 35000,
-    "category": ["gym-wear", "shorts"],
-    "slug": "byh-joggers-jorts",
-    "description": "Tapered performance joggers and rugged denim-cut athletic jorts. Built for comfort, standard athletic movement, and street style.",
+    "name": "BYH Joggers",
+    "price": "₦40,000.00",
+    "priceNumeric": 40000,
+    "category": "gym-wear",
+    "slug": "byh-joggers",
+    "description": "Tapered performance joggers. Built for comfort, standard athletic movement, and street style.",
     "images": {
       "default": "/images/byh_joggers_default.jpeg",
+      "hover": "/images/byh_joggers_default.jpeg"
+    },
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 23,
+    "name": "BYH Jorts",
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
+    "category": "shorts",
+    "slug": "byh-jorts",
+    "description": "Rugged denim-cut athletic jorts. Built for comfort, standard athletic movement, and street style.",
+    "images": {
+      "default": "/images/byh_jorts_default.jpeg",
       "hover": "/images/byh_jorts_default.jpeg"
     },
-    "colors": [
-      { "name": "Joggers", "swatch": "#1a1a1a", "default": "/images/byh_joggers_default.jpeg", "hover": "/images/byh_jorts_default.jpeg" },
-      { "name": "Jorts", "swatch": "#8b9cb4", "default": "/images/byh_jorts_default.jpeg", "hover": "/images/byh_joggers_default.jpeg" }
-    ],
     "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 8,
     "name": "BYH Athletic Shorts",
-    "price": "₦32,000.00",
-    "priceNumeric": 32000,
+    "price": "₦35,000.00",
+    "priceNumeric": 35000,
     "category": "shorts",
     "slug": "byh-athletic-shorts",
     "description": "Ultra-light athletic shorts made for speed. Built with 4-way stretch performance fabric.",
@@ -98,35 +108,34 @@
     "description": "Second-skin compression fit. BYH logo chest print — engineered for performance and recovery.",
     "images": {
       "default": "/images/byn_compression_tee_white.jpeg",
-      "hover": "/images/byn_compression_longsleeve_black.jpg"
+      "hover": "/images/byn_compression_tee_hover.jpeg"
     },
     "colors": [
-      { "name": "White", "swatch": "#ffffff", "default": "/images/byn_compression_tee_white.jpeg", "hover": "/images/byn_compression_longsleeve_black.jpg" }
+      { "name": "White", "swatch": "#ffffff", "default": "/images/byn_compression_tee_white.jpeg", "hover": "/images/byn_compression_tee_hover.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 18,
     "name": "BYH Muscle Tank",
-    "price": "₦25,000.00",
-    "priceNumeric": 25000,
+    "price": "₦27,000.00",
+    "priceNumeric": 27000,
     "category": "gym-wear",
     "slug": "byh-muscle-tank",
     "description": "Sleeveless BYH training tank. Lightweight, breathable, and built for reps.",
     "images": {
-      "default": "/images/byn_muscle_tank_grey.jpeg",
-      "hover": "/images/byn_compression_tee_white.jpeg"
+      "default": "/images/byn_muscle_tank_grey.jpeg"
     },
     "colors": [
-      { "name": "Grey", "swatch": "#8a8a8a", "default": "/images/byn_muscle_tank_grey.jpeg", "hover": "/images/byn_compression_tee_white.jpeg" }
+      { "name": "Grey", "swatch": "#8a8a8a", "default": "/images/byn_muscle_tank_grey.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 19,
     "name": "BYH Wide-Leg Joggers",
-    "price": "₦35,000.00",
-    "priceNumeric": 35000,
+    "price": "₦40,000.00",
+    "priceNumeric": 40000,
     "category": "gym-wear",
     "slug": "byh-wide-leg-joggers",
     "description": "Wide-leg BYH joggers. Relaxed silhouette, premium fleece, logo detail at hip. From training to the streets.",
