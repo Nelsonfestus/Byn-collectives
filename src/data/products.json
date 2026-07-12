@@ -68,11 +68,11 @@
     "slug": "byh-athletic-shorts",
     "description": "Ultra-light athletic shorts made for speed. Built with 4-way stretch performance fabric.",
     "images": {
-      "default": "/images/byn_athletic_shorts_default.jpg",
+      "default": "/images/WhatsApp Image 2026-07-12 at 4.37.44 PM (4).jpeg",
       "hover": "/images/byn_athletic_shorts_hover.jpg"
     },
     "colors": [
-      { "name": "Original", "swatch": "#7e7e7e", "default": "/images/byn_athletic_shorts_default.jpg", "hover": "/images/byn_athletic_shorts_hover.jpg" },
+      { "name": "Original", "swatch": "#7e7e7e", "default": "/images/WhatsApp Image 2026-07-12 at 4.37.44 PM (4).jpeg", "hover": "/images/byn_athletic_shorts_hover.jpg" },
       { "name": "Black", "swatch": "#000000", "default": "/images/byn_athletic_shorts_black.jpeg", "hover": "/images/byn_athletic_shorts_grey.jpeg" },
       { "name": "Lime", "swatch": "#d4ff3b", "default": "/images/byn_athletic_shorts_lime.jpeg", "hover": "/images/byn_athletic_shorts_red.jpeg" }
     ],
@@ -85,7 +85,7 @@
     "priceNumeric": 40000,
     "category": "t-shirts",
     "slug": "byh-rrr-tee",
-    "description": "Repeat. Refine. Result. The BYH signature graphic tee — anime-inspired back print, oversized cut, premium cotton weight. Available in 3 colorways.",
+    "description": "Repeat. Refine. Result. The BYH signature graphic tee — anime-inspired back print, oversized cut, premium cotton weight. Available in 4 colorways.",
     "images": {
       "default": "/images/byn_rrr_tee_coral_v2.jpeg",
       "hover": "/images/byn_rrr_tee_navy.jpeg"
@@ -93,7 +93,8 @@
     "colors": [
       { "name": "Coral", "swatch": "#e8593a", "default": "/images/byn_rrr_tee_coral_v2.jpeg", "hover": "/images/byn_rrr_tee_white_v2.jpeg" },
       { "name": "Navy", "swatch": "#1a2a4a", "default": "/images/byn_rrr_tee_navy.jpeg", "hover": "/images/byn_rrr_tee_coral_v2.jpeg" },
-      { "name": "White", "swatch": "#f5f5f5", "default": "/images/byn_rrr_tee_white_v2.jpeg", "hover": "/images/byn_rrr_tee_coral_v2.jpeg" }
+      { "name": "White", "swatch": "#f5f5f5", "default": "/images/byn_rrr_tee_white_v2.jpeg", "hover": "/images/byn_rrr_tee_coral_v2.jpeg" },
+      { "name": "Sage", "swatch": "#9ba88d", "default": "/images/WhatsApp Image 2026-07-12 at 4.37.44 PM (1).jpeg", "hover": "/images/byn_rrr_tee_sage.jpeg" }
     ],
     "sizes": ["S", "M", "L", "XL", "XXL"]
   },

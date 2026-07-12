@@ -120,7 +120,7 @@ function Hero({ onToast }) {
           }}
         >
           <img
-            src="/images/hero_banner.jpg"
+            src="/images/WhatsApp Image 2026-07-12 at 4.37.44 PM.jpeg"
             alt="BYH Collectives Lookbook"
             style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', filter: 'brightness(0.9)' }}
           />
